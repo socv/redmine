@@ -114,6 +114,7 @@ module Redmine
                       (                          # leading text
                         <\w+[^>]*?>|             # leading HTML tag, or
                         [\s\(\[,;]|              # leading punctuation, or
+                        \xE2\x80\x8B|    # leading zero-width space, or
                         ^                        # beginning of line
                       )
                       (
